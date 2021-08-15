@@ -44,25 +44,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uk9-pF-mWH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0FF-Pw-COo">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qm1-qi-gTX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0kV-f9-AGJ"/>
                             <constraint firstItem="Z2w-YM-cxr" firstAttribute="top" secondItem="qm1-qi-gTX" secondAttribute="bottom" id="AxE-fL-gaK"/>
+                            <constraint firstItem="Uk9-pF-mWH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ehf-Hu-ndO"/>
                             <constraint firstItem="Z2w-YM-cxr" firstAttribute="centerX" secondItem="qm1-qi-gTX" secondAttribute="centerX" id="hNO-VZ-U9W"/>
                             <constraint firstItem="qm1-qi-gTX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iO8-na-hI0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uk9-pF-mWH" secondAttribute="bottom" id="iQD-pO-t5R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uk9-pF-mWH" secondAttribute="trailing" id="tYg-td-a6R"/>
+                            <constraint firstItem="Uk9-pF-mWH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xwN-aw-cWc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="currentTemperature" destination="qm1-qi-gTX" id="qEt-Ws-dwE"/>
                         <outlet property="feelsLikeTemperature" destination="Z2w-YM-cxr" id="0OQ-dJ-6w7"/>
+                        <outlet property="myCollectionView" destination="Uk9-pF-mWH" id="T7e-62-Yv7"/>
                         <outlet property="requestBtn" destination="16m-A0-8Wx" id="A2f-xh-Tih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="65"/>
+            <point key="canvasLocation" x="774" y="3"/>
         </scene>
     </scenes>
     <resources>
